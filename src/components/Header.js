@@ -3,10 +3,10 @@ export default function Header() {
     return(
         <div className="header">
         <div className="header-image">
-          <img src="../images/sun-clouds.png" alt="left" />
+          <img src="https://raw.githubusercontent.com/victoralexug/weather-icons/main/images/sun-clouds.png" alt="left" />
         </div>
         <div className="hero">
-            <img src="../images/ppp-logo.png" alt="logo" />
+            <img src="https://raw.githubusercontent.com/victoralexug/weather-icons/main/images/ppp-logo.png" alt="logo" />
             <h1>3d Weather</h1>
         </div>
       </div>

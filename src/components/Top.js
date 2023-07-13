@@ -6,13 +6,13 @@ export default function Top(props) {
       if(props.data.weather[0].main === "Clear"){
         src = "sun.png"
       }else if(props.data.weather[0].main === "Clouds"){
-        src = "clouds.png"
+        src = "sun-clouds.png"
       }else if(props.data.weather[0].main === "Rain"){
         src = "sun-clouds-rain.png"
     }else if(props.data.weather[0].main === "Snow"){
       src = "clouds-snow.png"
     }else{
-      src=""
+      src="clouds.png"
     }
   }
   
@@ -26,7 +26,7 @@ export default function Top(props) {
           </div>
           {props.data.weather ? 
           <div className="description">
-            <img src={`../images/${src}`} alt="weather" />
+            <img src={`https://raw.githubusercontent.com/victoralexug/weather-icons/main/images/${src}`} alt="weather" />
             <p>{props.data.weather[0].main}</p> 
           </div> : null}
         </div>
