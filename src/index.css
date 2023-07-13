@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app{
+    background: #D7DEDD;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px 30px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.hero img{
+    width: 4.5em;
+}
+
+ .hero h1{
+    color: #000;
+    font-family: Sweet Sans Pro;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.search{
+    text-align: center;
+}
+
+.search input{
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 25px;
+    border: 1px solid rgba(17, 187, 187, 0.8);
+    background: rgba(22, 58, 63, 0.2);
+    color: #303064;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+
+.top{
+    padding: 2rem 2.5rem;
+}
+
+.top h1{
+    color: #000;
+    font-family: Sweet Sans Pro;
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.top p {
+    color: #303064;
+    font-family: Sweet Sans Pro;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.description{
+    display: flex;
+}
+
+.description img{
+    width: 55px;
+    padding:0 6px 0 1rem;
+}
+
+
+.bottom{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgba(22, 58, 63, 0.2);
+    color: #303064;
+}
+
+.bold{
+    font-weight: 700;
+    color: #1e1e3f;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: 9px;
+    color: #555;
+}
+.footer p a{
+    text-decoration: none;
+    color: #555;
 }
